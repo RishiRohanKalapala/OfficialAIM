@@ -90,7 +90,8 @@
         }
         .transparent-button {
             background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
-            border: none;
+            border: 2px solid darkgreen; /* Dark green border */
+            border-radius: 15px; /* Curved edges */
             color: white;
             padding: 10px 20px;
             text-align: center;
@@ -104,6 +105,16 @@
         .transparent-button:hover {
             background-color: rgba(0, 0, 0, 0.7); /* Darken on hover */
             transform: scale(1.1); /* Slightly enlarge on hover */
+        }
+        @media (max-width: 1200px) {
+            .content img {
+                width: 80%;
+            }
+        }
+        @media (max-width: 992px) {
+            .content img {
+                width: 70%;
+            }
         }
         @media (max-width: 768px) {
             .header {
@@ -129,11 +140,11 @@
                 max-width: 100%;
             }
             .content img {
-                width: 80%;
+                width: 60%;
                 margin-top: 10px;
             }
         }
-        @media (max-width: 480px) {
+        @media (max-width: 576px) {
             .logo {
                 font-size: 20px;
             }
@@ -146,6 +157,14 @@
             .transparent-button {
                 font-size: 14px;
                 padding: 8px 16px;
+            }
+            .content img {
+                width: 50%;
+            }
+        }
+        @media (max-width: 360px) {
+            .content img {
+                width: 100%;
             }
         }
     </style>
